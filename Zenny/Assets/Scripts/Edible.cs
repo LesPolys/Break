@@ -1,11 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class Edible : MonoBehaviour {
 
 	public Material[] mats;
 	Renderer theRenderer;
+
+
+
 	void Awake(){
 		theRenderer = GetComponent<Renderer> ();
 	}
@@ -24,9 +28,8 @@ public class Edible : MonoBehaviour {
 		theRenderer.material = mats [i];
 	}
 
-	public void OnTriggerEnter(Collider collider){
-		if(collider.gameObject.tag == "Tadpole"){
-			Destroy (gameObject);
-		}
-	}
+
+
+
+
 }

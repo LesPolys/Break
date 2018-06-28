@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311992, g: 0.38074034, b: 0.35872713, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311947, g: 0.38074005, b: 0.35872722, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -113,6 +113,26 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &2640500 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1760666881122404, guid: 6313984ec991eb24bb1cb88689ced8f5,
+    type: 2}
+  m_PrefabInternal: {fileID: 1262158000}
+--- !u!54 &2640501
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2640500}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &282840810
 GameObject:
   m_ObjectHideFlags: 0
@@ -273,6 +293,26 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &612377644 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1339989447937786, guid: dc0428d91c8f942488c0e499d98c4525,
+    type: 2}
+  m_PrefabInternal: {fileID: 824894828}
+--- !u!54 &612377645
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 612377644}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1001 &824894828
 Prefab:
   m_ObjectHideFlags: 0
@@ -314,7 +354,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1339989447937786, guid: dc0428d91c8f942488c0e499d98c4525, type: 2}
       propertyPath: m_Name
-      value: Trail
+      value: Trail3
       objectReference: {fileID: 0}
     - target: {fileID: 1339989447937786, guid: dc0428d91c8f942488c0e499d98c4525, type: 2}
       propertyPath: m_TagString
@@ -395,12 +435,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86eb18e81eb02b442b8018590e99f53c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dotPrefab: {fileID: 1552088345951128, guid: cdebb23e719fa094cb104fb513738229, type: 2}
+  dotPrefab: {fileID: 1571077063719464, guid: 786af1489bd211746aaec09953a87f6d, type: 2}
   timeBetweenDots: 2
   possibleRadius:
   - 2
   - 4
   - 6
+  tadpoles:
+  - {fileID: 1075866856}
+  - {fileID: 2640500}
+  - {fileID: 612377644}
+  minAcceptableDistance: 4
 --- !u!4 &1021795461
 Transform:
   m_ObjectHideFlags: 0
@@ -414,6 +459,26 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1075866856 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1051715760120506, guid: 2b9cc98bdd15ca2448132c2e66803c86,
+    type: 2}
+  m_PrefabInternal: {fileID: 1962109780}
+--- !u!54 &1075866857
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1075866856}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1001 &1262158000
 Prefab:
   m_ObjectHideFlags: 0
@@ -455,7 +520,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1760666881122404, guid: 6313984ec991eb24bb1cb88689ced8f5, type: 2}
       propertyPath: m_Name
-      value: Trail
+      value: Trail2
       objectReference: {fileID: 0}
     - target: {fileID: 114838387079980956, guid: 6313984ec991eb24bb1cb88689ced8f5,
         type: 2}
@@ -615,6 +680,18 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4603754545921288, guid: 0dbec65b3307b9844b13fec67e0b5745, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4603754545921288, guid: 0dbec65b3307b9844b13fec67e0b5745, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4603754545921288, guid: 0dbec65b3307b9844b13fec67e0b5745, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0dbec65b3307b9844b13fec67e0b5745, type: 2}
   m_IsPrefabParent: 0
@@ -628,6 +705,7 @@ GameObject:
   - component: {fileID: 1857038457}
   - component: {fileID: 1857038459}
   - component: {fileID: 1857038458}
+  - component: {fileID: 1857038460}
   m_Layer: 0
   m_Name: TextMeshPro Text
   m_TagString: Untagged
@@ -672,7 +750,9 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: 1
+  m_text: '0
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 715b80e429c437e40867928a4e1fc975, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 715b80e429c437e40867928a4e1fc975, type: 2}
@@ -699,13 +779,13 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 15
-  m_fontSizeBase: 15
+  m_fontSize: 11.8
+  m_fontSizeBase: 11.8
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 1
+  m_fontStyle: 0
   m_textAlignment: 514
   m_isAlignmentEnumConverted: 1
   m_characterSpacing: 0
@@ -740,9 +820,9 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 1857038458}
-    characterCount: 1
+    characterCount: 2
     spriteCount: 0
-    spaceCount: 0
+    spaceCount: 1
     wordCount: 1
     linkCount: 0
     lineCount: 1
@@ -772,6 +852,17 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1857038456}
+--- !u!114 &1857038460
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1857038456}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8a921aa4c5e9064f97362944792a397, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1962109780
 Prefab:
   m_ObjectHideFlags: 0
@@ -860,6 +951,10 @@ Prefab:
         type: 2}
       propertyPath: m_Time
       value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1051715760120506, guid: 2b9cc98bdd15ca2448132c2e66803c86, type: 2}
+      propertyPath: m_Name
+      value: Trail1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2b9cc98bdd15ca2448132c2e66803c86, type: 2}
