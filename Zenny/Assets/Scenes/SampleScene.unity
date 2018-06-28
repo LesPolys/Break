@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311947, g: 0.38074005, b: 0.35872722, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311992, g: 0.38074034, b: 0.35872713, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -331,20 +331,20 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4947077740999580, guid: dc0428d91c8f942488c0e499d98c4525, type: 2}
       propertyPath: m_LocalScale.x
-      value: 1.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4947077740999580, guid: dc0428d91c8f942488c0e499d98c4525, type: 2}
       propertyPath: m_LocalScale.y
-      value: 1.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4947077740999580, guid: dc0428d91c8f942488c0e499d98c4525, type: 2}
       propertyPath: m_LocalScale.z
-      value: 1.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 96074200363083274, guid: dc0428d91c8f942488c0e499d98c4525,
         type: 2}
       propertyPath: m_Parameters.widthMultiplier
-      value: 1.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 135305450395251800, guid: dc0428d91c8f942488c0e499d98c4525,
         type: 2}
@@ -477,20 +477,20 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4398889005490410, guid: 6313984ec991eb24bb1cb88689ced8f5, type: 2}
       propertyPath: m_LocalScale.x
-      value: 1.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4398889005490410, guid: 6313984ec991eb24bb1cb88689ced8f5, type: 2}
       propertyPath: m_LocalScale.y
-      value: 1.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4398889005490410, guid: 6313984ec991eb24bb1cb88689ced8f5, type: 2}
       propertyPath: m_LocalScale.z
-      value: 1.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 96283213786536140, guid: 6313984ec991eb24bb1cb88689ced8f5,
         type: 2}
       propertyPath: m_Parameters.widthMultiplier
-      value: 1.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 135727971607476568, guid: 6313984ec991eb24bb1cb88689ced8f5,
         type: 2}
@@ -826,20 +826,20 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4608434642112840, guid: 2b9cc98bdd15ca2448132c2e66803c86, type: 2}
       propertyPath: m_LocalScale.x
-      value: 1.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4608434642112840, guid: 2b9cc98bdd15ca2448132c2e66803c86, type: 2}
       propertyPath: m_LocalScale.y
-      value: 1.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4608434642112840, guid: 2b9cc98bdd15ca2448132c2e66803c86, type: 2}
       propertyPath: m_LocalScale.z
-      value: 1.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 96715291532049702, guid: 2b9cc98bdd15ca2448132c2e66803c86,
         type: 2}
       propertyPath: m_Parameters.widthMultiplier
-      value: 1.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 135366668234994112, guid: 2b9cc98bdd15ca2448132c2e66803c86,
         type: 2}
@@ -855,6 +855,11 @@ Prefab:
         type: 2}
       propertyPath: speed
       value: -3
+      objectReference: {fileID: 0}
+    - target: {fileID: 96715291532049702, guid: 2b9cc98bdd15ca2448132c2e66803c86,
+        type: 2}
+      propertyPath: m_Time
+      value: 0.3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2b9cc98bdd15ca2448132c2e66803c86, type: 2}
