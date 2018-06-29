@@ -62,7 +62,7 @@ public class Dot : MonoBehaviour {
 		ChangeDirection ();
 	}
 
-	public void OnTouchMoved(){
+	/*public void OnTouchMoved(){
 		ChangeDirection ();
-	}
+	}*/
 }
